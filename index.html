@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Daily Planning Tool</title>
+
+    <link rel="stylesheet" href="/dailyPlanningTool/styles/genericStyles.css">
+    <link rel="stylesheet" href="/dailyPlanningTool/styles/sidenavStyles.css">
+    <link rel="stylesheet" href="/dailyPlanningTool/styles/loginStyles.css">
+
+    <script src="https://kit.fontawesome.com/f0906ef22c.js" crossorigin="anonymous"></script>
+</head>
+<body>    
+
+    <header>
+        <table class="navTable">
+            <tr>
+                <td style="padding-left: 5px;">
+                    <h1>Daily Planning Tool</h1>
+                </td>
+
+                <td class="pageIcon">
+                    <h2><i class="fa-solid fa-right-to-bracket"></i></h2>
+                </td>
+
+                <td class="pageTitle">
+                    <h2>Login</h2>
+                </td>
+            </tr>
+        </table>        
+    </header>
+
+    <br>    
+    <br>
+    <br>
+
+    <div class="mainContainer" id ="main"> 
+        
+        <div class="rowContainer">
+            <div class="rowHeader">
+
+                <h3>Login</h3>               
+            </div> 
+
+            <form id="loginForm">                                
+                <label for="tmLogin" class="loginLabel">TM Number:</label>
+                <input type="text" id="tmLogin" name="tmLogin" class="tmLogin">
+                <input type="submit" id="submitButton" value="LOGIN" class="submitButton">
+                <br>
+                <label id="invalidLoginMessage" class="invalidLoginMessage">Invalid Login! Please try again.</label>                    
+
+            </form> 
+        </div>
+        
+    </div>
+
+    <footer>
+        <table class="contactTable">
+            <tr>
+                <td>
+                    Alec Groseclose
+                </td>
+
+                <td class="right">
+                    ALEC.GROSECLOSE@TARGET.COM
+                </td>
+            </tr>
+        </table>
+    </footer>  
+    
+    <script type="module" src="/dailyPlanningTool/javascript/userLogin.js"></script>  
+
+</body>
+</html>

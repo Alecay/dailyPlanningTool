@@ -1,0 +1,258 @@
+body 
+{
+    background-color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer
+{
+    width: 100%; 
+    border-top: solid 1px lightgray; 
+    color: lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70%;
+    margin: 15px 0px 0px 0px;    
+    
+}
+
+footer .contactTable
+{
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+footer .contactTable td
+{
+    padding: 5px;
+}
+
+footer .contactTable .right
+{
+    text-align: right;
+}
+
+header 
+{ 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    margin: 0px;
+    background-color: #333;
+    color: lightgray;
+    width: 100%; 
+    z-index: 1; 
+
+    border-bottom: solid 1px lightgray;       
+} 
+
+header .navTable
+{
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+header .navTable td
+{
+    vertical-align: middle;
+}
+
+header .navTable td.right
+{
+    text-align: right;
+}
+
+header .navTable td.pageIcon
+{
+    font-size: 150%;
+    width: 30px;
+    text-align: center;
+}
+
+header .navTable td.pageTitle
+{
+    width: 0%;
+    text-wrap: nowrap;
+    padding-right: 5px;
+    text-align: center;
+}
+
+header .navTable td.menuButton
+{
+    width: 50px;    
+}
+
+header .navTable .menuButton
+{
+    font-size: 150%;
+    min-width: 50px;
+    min-height: 50px;
+    cursor:pointer;
+}
+
+header h1
+{
+    font-size: 100%;
+    display: inline;
+    padding-right: 5px;
+}
+
+header h2
+{
+    font-size: 80%;    
+    display: inline;
+    padding-right: 5px;
+    margin: 3px 0px 0px 0px;    
+}
+
+header h3
+{
+    font-size: 70%;
+    display: inline;
+}
+
+header button
+{
+    font-size: 15px;
+    display: inline;
+    background-color: #333;
+    color: lightgray;
+    border: none;
+}
+
+.mainContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 100%;
+}
+
+.rowContainer
+{
+    display: block;    
+    flex-direction: row;
+    align-items: top;
+    justify-content: left;
+
+    width: 90%;
+    min-width: 350px;
+    max-width: 500px;
+    background-color: lightgray;
+    color: #333;
+    padding: 10px;
+    margin: 10px 30px 10px 30px;    
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    box-shadow: 3px 3px 5px black;
+
+    /* border: solid 1px black; */
+}
+
+.rowContainer p
+{
+    margin: 5px 5px 5px 15px;
+    font-size: 15px;
+}
+
+.rowContainer table
+{
+    width: 92%;
+    min-width: 320px;
+    max-width: 470px;
+
+    margin: 0px 15px 5px 15px;
+    border-collapse: collapse;    
+    font-size: 15px;    
+}
+
+.rowContainer td
+{    
+    border: #333 solid 1px;
+    color: #333;
+    font-size: 90%;
+    padding: 1px 1px 1px 1px;
+}
+
+.rowContainer th
+{        
+    background-color: #333;
+    color: lightgray;
+    text-align: left;
+    font-size: 70%;
+    padding: 1px 5px 1px 5px;
+}
+
+
+.rowHeader
+{    
+    display: block;    
+    flex-direction: row;
+    align-items: top;
+    justify-content: left;
+    
+    min-width: 270px;
+    max-width: 470px;
+    background-color: #333;
+    color: lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 10px;   
+}
+
+.rowControls
+{
+    height: 30px;
+    display: block;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;    
+    
+    min-width: 270px;
+    max-width: 470px;
+    background-color: #333;
+    color: lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 10px;   
+}
+
+.rowControls h3
+{
+    margin: 0px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.rowHeader h3
+{
+    margin: 0px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+button.headerButton
+{
+    display: inline;
+    background-color: lightgray;
+    color: #333;
+    float: right;
+    font-size: 20px;
+    border-radius: 3px;
+    margin-left: 5px;    
+
+}
+
+button.headerButton:hover
+{
+    background-color: rgb(10, 60, 66);
+    color: lightgray;
+}

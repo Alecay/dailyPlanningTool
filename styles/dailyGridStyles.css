@@ -1,0 +1,86 @@
+.rowContainer th.department
+{    
+    border-radius: 3px 0px 0px 0px;    
+    width: 90%;    
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.rowContainer th.tmCount
+{    
+    border-radius: 0px 3px 0px 0px;    
+    width: 10%;    
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+.rowContainer th.name
+{
+    border-radius: 3px 0px 0px 0px;
+    width: 50%;    
+    text-align: left;
+}
+
+.rowContainer th.shift
+{
+    width: 40%;
+    text-align: center;
+}
+
+.rowContainer th.hours
+{   
+    border-radius: 0px 3px 0px 0px;
+    width: 10%;
+    text-align: right;
+}
+
+.rowContainer td.name
+{
+    width: 50px;
+    padding-left: 3px;
+}
+
+.rowContainer td.shift
+{        
+    width: 40%; 
+    text-align: center;    
+}
+
+.rowContainer td.hours
+{    
+    width: 10%; 
+    text-align: right;
+    padding-right: 3px;
+}
+
+.rowHeader .title
+{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.rowHeader .date
+{
+    font-size: 25px;
+    /* float: right; */
+}
+
+.rowHeader .store, .dailyCount
+{
+    float: right;
+}
+
+.rowHeader .tmCount
+{
+    float:right;
+}
+
+button.printButton
+{
+    margin-right: 10px;
+}
+
+@media screen and (max-width:500px) 
+{
+    button.printButton { display: none;}
+}

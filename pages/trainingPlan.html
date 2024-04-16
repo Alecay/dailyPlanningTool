@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Grid - Daily Planning Tool</title>
+
+    <link rel="stylesheet" href="/dailyPlanningTool/styles/genericStyles.css">    
+    <link rel="stylesheet" href="/dailyPlanningTool/styles/sidenavStyles.css">
+
+    <script src="https://kit.fontawesome.com/f0906ef22c.js" crossorigin="anonymous"></script>
+</head>
+<body>    
+
+    <header>
+        <table class="navTable">
+            <tr>
+                <td class="menuButton">
+                    <button class="menuButton" onclick="openNav()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </td>
+
+                <td>
+                    <h1>Daily Planning Tool</h1>
+                </td>
+
+                <td class="pageIcon">
+                    <h2><i class="fa-solid fa-calendar-days"></i></h2>
+                </td>
+
+                <td class="pageTitle">
+                    <h2>Daily Grid</h2>
+                </td>
+            </tr>
+        </table>        
+    </header>
+
+    <script type="text/javascript" src="/dailyPlanningTool/javascript/helpers/sideNav.js"></script>
+    <div id="sidenav" class="sidenav">     
+        <a class="noClick" id="userName">Alec Groseclose</a>
+        <a class="noClick" id="userTitle">Service & Engagement Team Leader</a>
+        <hr>
+        <a href="/dailyPlanningTool/index.html"><i class="fa-solid fa-power-off"></i> Signout</a>
+        <a href="/dailyPlanningTool/pages/dailyGrid.html"><i class="fa-solid fa-calendar-days"></i> Daily Grid</a>
+        <a href="#"><i class="fa-solid fa-computer"></i> Training Plans</a>
+        <a href="#"><i class="fa-solid fa-mug-hot"></i> Break Schedules</a>
+        <a href="#"><i class="fa-solid fa-file-signature"></i> Assignment Sheets</a>
+        <a href="#"><i class="fa-solid fa-database"></i> Greenfield</a>
+        <a href="#"><i class="fa-solid fa-upload"></i> Data Upload</a>
+    </div>
+
+    <div id="sidenavShadow" class="sidenavShadow" onclick="closeNav()"></div>
+
+    <br>    
+    <br>
+    <br>
+
+    <div class="mainContainer" id ="main"> 
+        
+        <div class="rowContainer">
+            <div class="rowControls">
+
+                <h3>Settings</h3>                
+
+                <button class="printButton headerButton" onclick="" id="printButton">                    
+                    <i class="fa-solid fa-print"></i>
+                </button>
+            </div> 
+        </div>
+
+        <div class="rowContainer">
+            <div class="rowHeader">
+
+                <h3>Training Plan</h3>
+
+            </div> 
+
+            <table style="margin-bottom: 0px;">
+                <tr>
+                    <th class="dateHeader" id="dateHeader">
+                        Monday 03/01
+                    </th>
+                    <th class="tmCount" id="tmCount">
+                        0
+                    </th>
+                </tr>
+            </table>
+
+            <table id="tmTable">
+                <tr>
+                    <th class="name">
+                        Name
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th class="shift">
+                        Shift
+                    </th>
+                    <th class="hours">
+                        Training Due
+                    </th>
+                </tr>
+                <tr id="tmRow">
+                    <td class="name" id="name">
+                        Las, First Name (1234) T:X
+                    </td>
+                    
+                    <td class="date" id="date">
+                        03/01/24
+                    </td>
+    
+                    <td class="shift" id="shift">
+                        08:00 AM - 04:00 PM
+                    </td>                  
+    
+                    <td class="trainingCount" id="trainingCount">
+                        1
+                    </td>
+                </tr>                                
+            </table>
+        </div>
+        
+    </div>
+
+    <footer>
+        <table class="contactTable">
+            <tr>
+                <td>
+                    Alec Groseclose
+                </td>
+
+                <td class="right">
+                    ALEC.GROSECLOSE@TARGET.COM
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script type="module" src="/dailyPlanningTool/javascript/dailyGrid.js"></script>      
+
+</body>
+</html>
